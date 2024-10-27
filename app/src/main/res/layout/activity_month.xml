@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề của tháng -->
+    <TextView
+        android:id="@+id/tvMonthTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tháng 10 - 2024"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <!-- Các nút điều hướng tháng trước và tháng sau -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnPreviousMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tháng trước"/>
+
+        <Button
+            android:id="@+id/btnNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Tháng sau"/>
+    </LinearLayout>
+
+    <!-- Lưới ngày tháng -->
+    <GridLayout
+        android:id="@+id/gridMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:columnCount="7"
+        android:rowCount="6"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_margin="16dp"
+        android:layout_gravity="start" />
+
+</LinearLayout>

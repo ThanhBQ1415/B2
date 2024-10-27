@@ -1,0 +1,35 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thống kê theo thời gian"
+        android:textSize="18sp"
+        android:padding="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/time_options" />
+
+    <com.b21dcvt398.bai2.Activity.CustomBarChart
+        android:id="@+id/customBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="16dp" />
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_margin="16dp"
+        android:layout_gravity="start" />
+
+</LinearLayout>

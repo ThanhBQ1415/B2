@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bai2</string>
+    <string-array name="time_options">
+        <item>Thống kê theo tháng </item>
+        <item>Thống kê theo năm </item>
+    </string-array>
+</resources>

@@ -1,0 +1,89 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Tiêu đề cho Add Category -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Category"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="24dp" />
+
+    <!-- Spinner Chọn Thu/Chi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In/Out"
+        android:textSize="18sp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerTransactionType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/in_out_array" />
+
+    <!-- Tên Danh Mục -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etCategoryName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter category name" />
+
+    <!-- Nút chọn biểu tượng -->
+    <Button
+        android:id="@+id/btnSelectIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Icon"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Hiển thị biểu tượng đã chọn -->
+    <ImageView
+        android:id="@+id/imageViewSelectedIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:contentDescription="Selected Icon"
+        android:visibility="gone" /> <!-- Ẩn mặc định -->
+
+    <!-- Spinner Chọn Parent -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parent Category"
+        android:textSize="18sp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp" />
+
+    <Spinner
+        android:id="@+id/spinnerParentCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Nút Lưu -->
+    <Button
+        android:id="@+id/btnSaveCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+</LinearLayout>

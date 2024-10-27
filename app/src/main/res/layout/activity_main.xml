@@ -1,0 +1,97 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- RelativeLayout để chứa toàn bộ nội dung -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <!-- LinearLayout bên trong RelativeLayout để chứa tiêu đề và các nút -->
+        <LinearLayout
+            android:id="@+id/llOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Danh sách giao dịch"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp">
+                <Button
+                    android:id="@+id/btntk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thống Kê"
+                    android:layout_marginStart="16dp" />
+
+                <Button
+                    android:id="@+id/btnMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Month"
+                    android:layout_marginStart="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- TextViews cho tổng thu và tổng chi -->
+        <TextView
+            android:id="@+id/tvTotalIncome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng thu: 0"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_below="@id/llOptions"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/tvTotalExpense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng chi: 0"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_below="@id/tvTotalIncome"
+            android:layout_marginTop="8dp" />
+
+        <!-- ListView hiển thị các giao dịch -->
+        <ListView
+            android:id="@+id/lvTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="16dp"
+            android:layout_below="@id/tvTotalExpense"
+            android:layout_above="@+id/btnAddTransaction" />
+
+        <Button
+            android:id="@+id/btnAddTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm giao dịch"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:padding="12dp" />
+
+    </RelativeLayout>
+</ScrollView>

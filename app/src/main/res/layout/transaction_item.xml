@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08/10/2024 - 19:31"
+        android:textSize="14sp"
+        android:textColor="#808080"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvTransactionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Name"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_below="@id/tvDateTime"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="93,000 VND"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@id/tvTransactionName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>
